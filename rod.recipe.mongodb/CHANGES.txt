@@ -1,0 +1,46 @@
+Changes
+=======
+
+1.2.2 2011-01-21
+----------------
+
+  - Added buildout option 'update=true/false' to force or prevent updating
+    the part.
+
+
+1.2.1 2010-08-11
+----------------
+
+  - Added missing command line parameters for Replica Sets (MongoDB 1.6.0).
+
+
+1.2.0 2010-05-16
+----------------
+
+  - Creating start script with command line parameters specified as buildout
+    options.
+
+
+1.1.4 2010-04-18
+----------------
+
+  - Symlinking rather than copying binaries.
+
+
+1.1.0 2010-04-15
+----------------
+
+  - Copying all MongoDB binaries into the 'bin' folder of the buildout
+    environment (ajung).
+
+
+1.0.1 2009-08-21
+----------------
+
+  - Removing part before updating.
+
+
+1.0.0 2009-08-14
+----------------
+
+  - Initial release.

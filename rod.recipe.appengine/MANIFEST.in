@@ -1,0 +1,8 @@
+include PKG-INFO
+include *.txt
+include *.py
+include buildout.cfg
+include src/rod/recipe/appengine/README.txt
+include src/rod/recipe/appengine/tests/foo.bar/*
+include src/rod/recipe/appengine/tests/bazpkg/*
+include src/rod/recipe/appengine/tests/patch.diff

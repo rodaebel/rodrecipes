@@ -1,0 +1,187 @@
+Changes
+=======
+
+2.0.6 2014-12-31
+----------------
+
+    - use_setuptools_pkg_resources support for pkg_resources as a package
+      and the setuptools zip is unpacked during installation [jjmurre] 
+
+
+2.0.5 2014-12-30
+----------------
+
+    - pkg_resources has changed from a module to a package which broke
+      the 'use_setuptools_pkg_resources' option. Now the package is copied if
+      it is a package. [jjmurre]
+
+2.0.4 2014-09-04
+----------------
+
+    - Added 'ignore-packages' configuration, to exclude problematic packages [jjmurre]
+      
+2.0.3 2013-06-17
+----------------
+    
+    - Fix for issue 18/20/21: appcfg should not use the 'appserver-run-file' config. variable.
+    
+2.0.2 2013-06-18
+----------------
+
+    - Added 'appserver-script-name' configuration, to accomodate alternative
+      appserver scripts names (some versions in the 1.7.x range used
+      dev_appserver2.py). [jjmurre]
+
+    - Added 'appserver-run-file' configurations, because Google changed this
+      name somewhere in the 1.7.x version range. [jjmurre]
+
+    - Added 'symlink-gae-runtime'. Throught this switch a symlink to
+      the GAE runtime script '_python_runtime.py' can be made in de 
+      buildout bin directory. This symlink is needed, because the
+      developments server had been thouroughly rewritten by Google. [jjmurre]
+
+2.0.1 2013-02-21
+----------------
+
+  - Made dev_appserver configurable (dev_appserver/dev_appserver2) [attilaolah]
+
+2.0.0 2011-07-01
+----------------
+
+  - Adds support for zc.recipe.eggs options such as entry-points and
+    extra-paths.
+
+
+1.7.0 2011-05-16
+----------------
+
+  - Adds support for regular expression excludes.
+
+  - Minor refactoring and clean-up.
+
+
+1.6.2 2010-04-18
+----------------
+
+  - Fixes an issue where symlink fails on platforms other than UNIX.
+
+
+1.6.1 2010-04-03
+----------------
+
+  - Fixes an issue where the patch option can't be used without patch-options.
+
+
+1.6.0 2010-04-03
+----------------
+
+  - New option to specify a patch file for modifying the Google App Engine
+    SDK source tree.
+
+
+1.5.1 2010-03-27
+----------------
+
+  - Fixes an issue where setuptools wasn't found.
+
+  - Distribute can be used as a replacement for setuptools.
+
+  - Added credits for Attila Olah.
+
+
+1.5.0 2010-03-27
+----------------
+
+  - Adds option to copy setuptool's original pkg_resources.py file into app
+    directory rather than writing a dummy stub.
+
+
+1.4.1 2010-01-18
+----------------
+
+  - Fixes an issue where egg contents which are just single modules aren't
+    copied into the project.
+
+    - http://code.google.com/p/rodrecipes/source/detail?r=14
+
+
+1.4.0 2009-08-26
+----------------
+
+  - Added server-script option.
+  - Tests added.
+
+
+1.3.1 2009-07-15
+----------------
+
+  - Fixed issue when copying egg contents.
+
+
+1.3.0 2009-07-04
+----------------
+
+  - Added options zip-packages and exclude.
+
+
+1.2.1 2009-07-03
+----------------
+
+  - Uses a much better method for excluding optional c extensions and compiled
+    modules.
+  - A step forward in platform independence.
+
+
+1.2.0 2009-06-24
+----------------
+
+  - Creates appcfg script.
+
+
+1.1.1 2009-06-07
+----------------
+
+  - Makes symbolic links for application files.
+  - Downloads stay untouched.
+
+
+1.1.0 2009-04-08
+----------------
+ 
+  - Mostly rewritten.
+  - Installs google appengine as part.
+  - Adding dummy pkg_resources module to handle namespace package relicts.
+  - Tests added.
+  - Ready for Google App Engine SDK 1.2.0
+
+
+1.0.0b5 2009-01-20
+------------------
+
+  - Requires Google App Engine SDK 1.1.8
+
+
+1.0.0b4 2008-09-04
+------------------
+
+  - Create and use PROJECT_HOME/var to place temporary project files like
+    data base files.
+
+
+1.0.0b3 2008-09-02
+------------------
+
+  - Copy package contents to temporary library directory.
+
+
+1.0.0b2 2008-09-02
+------------------
+
+  - Installs the whole distribution in the parts directory now. So it is ready
+    to test and deploy.
+
+
+1.0.0b1 2008-09-01
+------------------
+
+  - First beta release.
